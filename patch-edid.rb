@@ -22,6 +22,8 @@ if displays.length > 1
     puts "is giving you problems.","\n"
 elsif displays.length == 0
     puts "No display data found!  Are any external displays connected?"
+    puts "\nNote: Apple Silicon (arm64) devices are currently unsupported, as the standard"
+    puts "method of retrieving display information does not work."
 end
 displays.each do |disp|
     # Retrieve monitor model from EDID display descriptor
